@@ -1,0 +1,709 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <style>
+      :root {
+        --brand-dark: #0b1b2b;
+        --brand-accent: #d4a373; /* warm gold accent */
+      }
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+      .navbar-brand img {width: 300px;}
+      .footer-logo {width: 450px;}
+      .hero {
+        background: linear-gradient(rgba(11,27,43,.6), rgba(11,27,43,.6)),
+                    url('images/rs=w_1920,m.jpg') center/cover no-repeat;
+        color: #fff;
+        min-height: 90vh;
+        display: grid;
+        place-items: center;
+        text-align: center;
+      }
+      .fw-less-bold {
+        font-weight: 600;
+      }
+      .bg-form {
+        background: linear-gradient(rgba(11,27,43,.6), rgba(11,27,43,.6)),
+                    url('images/rs=w_1535,m.jpg') center/cover no-repeat;
+        background-attachment: fixed;
+      }
+      .bg-partner {
+        background: linear-gradient(rgba(11,27,43,.6), rgba(11,27,43,.6)),
+                    url('images/pexels-heyho-5997996.jpg') center/cover no-repeat;
+        background-attachment: fixed;
+      }
+      .bg-partner,
+      .bg-form {
+      	padding-top: 10rem!important;
+      	padding-bottom: 10rem!important;
+      }
+      .brand-main {
+      	font-family: "Cinzel", serif;
+      	text-transform: uppercase;
+      }
+      .section-title {
+        font-weight: 700;
+        letter-spacing: .3px;
+      }
+      .card img { object-fit: cover; height: 200px; }
+      .contact-card { background: #f8f9fa; }
+      .badge-accent { background-color: var(--brand-accent); }
+      .par-text,
+      #partnership-logo p {
+      	color: #fff;
+      	text-align: center;
+      }
+      .search-section,
+      .partner-section {
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+      .partner-section {
+      	display: flex;
+    	justify-content: space-around;
+      }
+      .form-label {color: var(--bs-heading-color);}
+      .btn-search {
+        letter-spacing: 1px;
+        width: 100%;
+      }
+
+    .gallery-item {
+      overflow: hidden;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      transition: transform .35s ease;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+    .gallery-caption {
+      font-size: .9rem;
+      color: #6c757d;
+      margin-top: .5rem;
+      text-align: center;
+    }
+    .modal-dialog {
+      max-width: 1000px;
+    }
+    .modal-img {
+      width: 100%;
+      height: auto;
+    }
+    #services img {height: 350px; object-position: top;}
+      .footer { background: #181818; color: #e9ecef; padding-bottom: 0!important;}
+      .footer-copy { background: #000; color: #e9ecef; }
+      .footer a { color: #e9ecef; text-decoration: none; }
+
+
+    @media only screen and (max-width: 480px) {
+      .navbar-brand img {width: 200px;}
+      .partner-section {gap: 2em; flex-wrap: wrap;}
+      .footer-logo {width: 300px}
+    }
+    </style>
+  </head>
+  <body>
+    <!-- Top Bar / Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top border-bottom">
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          <img src="images/Marci Metzger.png" alt="Marci Metzger Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#listings">Listings</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">Let's Move</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">About Us</a></li>
+            <li class="nav-item ms-lg-3"><a class="btn btn-primary" href="#search"><i class="bi bi-search me-1"></i> Search Homes</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header id="home" class="hero">
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10">
+            <h1 class="display-5 fw-less-bold mb-3">Need a Real Estate Agent? <br class="d-none d-md-inline"/>Let’s Find Your Home!</h1>
+            <hr>
+            <p class="lead fw-less-bold mb-0">MARCI METZGER - THE RIDGE REALTY GROUP</p>
+            <h2 class="display-3 mb-3 brand-main mb-4">Pahrump Realtor</h2>
+            <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+              <a href="#listings" class="btn btn-lg btn-primary"><i class="bi bi-buildings me-2"></i>Current Listings</a>
+              <a href="tel:2069196886" class="btn btn-lg btn-outline-light"><i class="bi bi-telephone me-2"></i>Call Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Listings / Cards -->
+    <section id="listings" class="py-5">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row align-items-md-end justify-content-between gap-3 mb-4">
+          <div>
+            <h2 class="section-title mb-1">Featured Listings</h2>
+            <p class="text-secondary mb-0">From cozy starter homes to stunning estates, explore listings that highlight the finest opportunities available today.</p>
+          </div>
+          <div class="d-flex gap-2">
+            <button class="btn btn-outline-secondary btn-sm" type="button"><i class="bi bi-funnel me-1"></i>Filter</button>
+            <button class="btn btn-outline-secondary btn-sm" type="button"><i class="bi bi-arrow-down-up me-1"></i>Sort</button>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="images/Listings/pexels-curtis-adams-1694007-5071174.jpg" class="card-img-top" alt="Cozy Suburban Home"/>
+              <div class="card-body">
+                <span class="badge text-bg-primary mb-2">For Sale</span>
+                <h5 class="card-title">Cozy Suburban Home</h5>
+                <p class="card-text small text-secondary">3 Beds • 2 Baths • 1,850 sqft</p>
+                <p class="fw-semibold mb-3">$425,000</p>
+                <a href="#" class="btn btn-outline-primary w-100">View Details</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="images/Listings/pexels-macourt-media-1519726-22764113.jpg" class="card-img-top" alt="Modern City Loft"/>
+              <div class="card-body">
+                <span class="badge text-bg-success mb-2">New</span>
+                <h5 class="card-title">Modern City Loft</h5>
+                <p class="card-text small text-secondary">2 Beds • 2 Baths • 1,250 sqft</p>
+                <p class="fw-semibold mb-3">$569,000</p>
+                <a href="#" class="btn btn-outline-primary w-100">View Details</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="images/Listings/pexels-jx588-14459284.jpg" class="card-img-top" alt="Spacious Backyard"/>
+              <div class="card-body">
+                <span class="badge text-bg-warning mb-2">Open House</span>
+                <h5 class="card-title">Spacious Backyard</h5>
+                <p class="card-text small text-secondary">4 Beds • 3 Baths • 2,400 sqft</p>
+                <p class="fw-semibold mb-3">$649,000</p>
+                <a href="#" class="btn btn-outline-primary w-100">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <a class="btn btn-primary">See All Listings</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-5 bg-body-tertiary">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-6">
+            <img class="img-fluid rounded-4 shadow-sm" src="images/Marci Metzger.jpg" alt="Marci Metzger" />
+          </div>
+          <div class="col-12 col-lg-6">
+            <h2 class="section-title mb-1">MARCI METZGER</h2>
+            <h4 class="section-title">REALTOR</h4>
+            <p class="lead mb-4">Nearly three decades of helping buyers and sellers navigate changing markets with confidence.</p>
+            <p class="mb-0 lead">Marci was a REALTOR, then licensed Broker, in Washington State. Now, she is enjoying the sunshine, and helping clients in Southern Nevada. Having helped buyers and sellers in many markets since 1995, she is a wealth of knowledge.</p>
+            <div class="d-flex gap-2 mt-4">
+              <a href="tel:2069196886" class="btn btn-primary"><i class="bi bi-telephone me-2"></i>Call Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Get It Sold -->
+    <section id="get-sold" class="py-5">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row align-items-md-end justify-content-between gap-3 mb-4">
+          <div>
+            <h2 class="section-title mb-1">Get It Sold</h2>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="images/95_25_.jpg" class="card-img-top" alt="Cozy Suburban Home"/>
+              <div class="card-body">
+                <h5 class="card-title">Top Residential Sales Last 5 Years</h5>
+                <p class="text-secondary">We helped nearly 90 clients in 2021, and closed 28.5 million in sales! Our team works hard everyday to grow and learn, so that we may continue to excel in our market. Our clients deserve our best, & we want to make sure our best is better every year.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="images/com_isteam_stock_107927___rs=w_600,h_300,cg_true,m_.jpg" class="card-img-top" alt="Modern City Loft"/>
+              <div class="card-body">
+                <h5 class="card-title">Don't Just List it...</h5>
+                <p class="text-secondary">Get it SOLD! We exhaust every avenue to ensure our listings are at the fingertips of every possible buyer, getting you top dollar for your home.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="images/29_25_.jpg" class="card-img-top" alt="Spacious Backyard"/>
+              <div class="card-body">
+                <h5 class="card-title">Guide to Buyers</h5>
+                <p class="text-secondary">Nobody knows the market like we do. Enjoy having a pro at your service. Market analysis, upgrades lists, contractors on speed dial, & more!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Find Your Dream Home -->
+    <section class="py-5 bg-form">
+  	  <h2 class="section-title mb-4 par-text">Find Your Dream Home</h2>
+      <div class="container">
+  		  <div class="search-section">
+  		    <h2 class="section-title mb-4">Search Listings</h2>
+  		    <form>
+  		      <div class="row g-3">
+  		        <div class="col-md-4">
+  		          <label for="location" class="form-label">Location</label>
+  		          <select class="form-select" id="location">
+  		            <option selected>Choose...</option>
+  		            <option>Location 1</option>
+  		            <option>Location 2</option>
+  		          </select>
+  		        </div>
+  		        <div class="col-md-4">
+  		          <label for="type" class="form-label">Type</label>
+  		          <select class="form-select" id="type">
+  		            <option selected>Choose...</option>
+  		            <option>House</option>
+  		            <option>Apartment</option>
+  		          </select>
+  		        </div>
+  		        <div class="col-md-4">
+  		          <label for="sortby" class="form-label">Sort By</label>
+  		          <select class="form-select" id="sortby">
+  		            <option selected>Choose...</option>
+  		            <option>Newest</option>
+  		            <option>Oldest</option>
+  		            <option>Least Expensive to Most</option>
+  		            <option>Most Expensive to Least</option>
+  		            <option>Bedrooms (Low to High)</option>
+  		            <option>Bedrooms (High to Low)</option>
+  		            <option>Bathrooms (Low to High)</option>
+  		            <option>Bathrooms (High to Low)</option>
+  		          </select>
+  		        </div>
+
+  		        <div class="col-md-3">
+  		          <label for="bedrooms" class="form-label">Bedrooms</label>
+  		          <select class="form-select" id="bedrooms">ggr
+  		            <option>Any Number</option>
+  		            <option>Studio</option>
+  		            <option>1+</option>
+  		            <option>2+</option>
+  		            <option>3+</option>
+  		            <option>4+</option>
+  		            <option>5+</option>
+  		            <option>6+</option>
+  		          </select>
+  		        </div>
+  		        <div class="col-md-3">
+  		          <label for="baths" class="form-label">Baths</label>
+  		          <select class="form-select" id="baths">
+  		            <option>Any Number</option>
+  		            <option>1+</option>
+  		            <option>2+</option>
+  		            <option>3+</option>
+  		            <option>4+</option>
+  		            <option>5+</option>
+  		            <option>6+</option>
+  		          </select>
+  		        </div>
+  		        <div class="col-md-3">
+  		          <label for="minprice" class="form-label">Min Price</label>
+  		          <input type="number" class="form-control" id="minprice" placeholder="$">
+  		        </div>
+  		        <div class="col-md-3">
+  		          <label for="maxprice" class="form-label">Max Price</label>
+  		          <input type="number" class="form-control" id="maxprice" placeholder="$">
+  		        </div>
+
+  		        <div class="col-12 text-end">
+  		          <button type="submit" class="btn btn-primary btn-search">SEARCH NOW</button>
+  		        </div>
+  		      </div>
+  		    </form>
+  		  </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-5 bg-body-tertiary">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10">
+            <h2 class="section-title mb-4 text-center">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="q1h">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1" aria-expanded="true" aria-controls="q1">Do you work outside regular office hours?</button>
+                </h2>
+                <div id="q1" class="accordion-collapse collapse show" aria-labelledby="q1h" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">Yes — appointments outside 8:00 AM–7:00 PM are welcome by request.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="q2h">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2" aria-expanded="false" aria-controls="q2">How do I get pre‑approved?</button>
+                </h2>
+                <div id="q2" class="accordion-collapse collapse" aria-labelledby="q2h" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">We can connect you with trusted lenders who can pre‑approve you in as little as 24–48 hours.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="q3h">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3" aria-expanded="false" aria-controls="q3">Do you list rental properties?</button>
+                </h2>
+                <div id="q3" class="accordion-collapse collapse" aria-labelledby="q3h" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">Yes, we handle rentals and property management referrals depending on availability.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Gallery -->
+	<section class="py-5">
+	  <div class="container">
+	    <h2 class="mb-4">Photo Gallery</h2>
+
+	    <div class="row g-4">
+	      <div class="col-6 col-lg-3">
+	        <div class="gallery-item shadow-sm" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="images/Gallery/__img1.wsimg.com_isteam_ip_067a4d42-19e8-46d9-9bed-578bf62dd44e_5570_20Ailanto-50.jpg-SMALL.JPG___rs=w_1300,h_800.jpg">
+	          <img src="images/Gallery/__img1.wsimg.com_isteam_ip_067a4d42-19e8-46d9-9bed-578bf62dd44e_5570_20Ailanto-50.jpg-SMALL.JPG___rs=w_1300,h_800.jpg" alt="Gallery 1">
+	        </div>
+	      </div>
+
+	      <div class="col-6 col-lg-3">
+	        <div class="gallery-item shadow-sm" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="images/Gallery/__img1.wsimg.com_isteam_ip_067a4d42-19e8-46d9-9bed-578bf62dd44e_4460_20Roseworthy-52.jpg-SMALL.JPG___rs=w_1300,h_800.jpg">
+	          <img src="images/Gallery/__img1.wsimg.com_isteam_ip_067a4d42-19e8-46d9-9bed-578bf62dd44e_4460_20Roseworthy-52.jpg-SMALL.JPG___rs=w_1300,h_800.jpg" alt="Gallery 2">
+	        </div>
+	      </div>
+
+	      <div class="col-6 col-lg-3">
+	        <div class="gallery-item shadow-sm" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="images/Gallery/__img1.wsimg.com_isteam_ip_067a4d42-19e8-46d9-9bed-578bf62dd44e_4787_20E_20Beacon_20Ridge-41.jpg-SMALL.JPG___rs=w_1300,h_800.jpg">
+	          <img src="images/Gallery/__img1.wsimg.com_isteam_ip_067a4d42-19e8-46d9-9bed-578bf62dd44e_4787_20E_20Beacon_20Ridge-41.jpg-SMALL.JPG___rs=w_1300,h_800.jpg" alt="Gallery 3">
+	        </div>
+	      </div>
+
+	      <div class="col-6 col-lg-3">
+	        <div class="gallery-item shadow-sm" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="images/Gallery/__img1.wsimg.com_isteam_ip_067a4d42-19e8-46d9-9bed-578bf62dd44e_4787_20E_20Beacon_20Ridge-53.jpg-SMALL.JPG___rs=w_1300,h_800.jpg">
+	          <img src="images/Gallery/__img1.wsimg.com_isteam_ip_067a4d42-19e8-46d9-9bed-578bf62dd44e_4787_20E_20Beacon_20Ridge-53.jpg-SMALL.JPG___rs=w_1300,h_800.jpg" alt="Gallery 4">
+	        </div>
+	      </div>
+
+	      <div class="col-6 col-lg-3">
+	        <div class="gallery-item shadow-sm" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="images/Gallery/__img1.wsimg.com_isteam_ip_067a4d42-19e8-46d9-9bed-578bf62dd44e_4787_20E_20Beacon_20Ridge-54.jpg-SMALL.JPG___rs=w_1300,h_800.jpg">
+	          <img src="images/Gallery/__img1.wsimg.com_isteam_ip_067a4d42-19e8-46d9-9bed-578bf62dd44e_4787_20E_20Beacon_20Ridge-54.jpg-SMALL.JPG___rs=w_1300,h_800.jpg" alt="Gallery 5">
+	        </div>
+	      </div>
+
+	      <div class="col-6 col-lg-3">
+	        <div class="gallery-item shadow-sm" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="images/Gallery/__img1.wsimg.com_isteam_ip_067a4d42-19e8-46d9-9bed-578bf62dd44e_5570_20Ailanto-14.jpg-SMALL.JPG___rs=w_1300,h_800.jpg">
+	          <img src="images/Gallery/__img1.wsimg.com_isteam_ip_067a4d42-19e8-46d9-9bed-578bf62dd44e_5570_20Ailanto-14.jpg-SMALL.JPG___rs=w_1300,h_800.jpg" alt="Gallery 6">
+	        </div>
+	      </div>
+
+	      <div class="col-6 col-lg-3">
+	        <div class="gallery-item shadow-sm" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="images/Gallery/__img1.wsimg.com_isteam_ip_067a4d42-19e8-46d9-9bed-578bf62dd44e_5570_20Ailanto-45.jpg-SMALL.JPG___rs=w_1300,h_800.jpg">
+	          <img src="images/Gallery/__img1.wsimg.com_isteam_ip_067a4d42-19e8-46d9-9bed-578bf62dd44e_5570_20Ailanto-45.jpg-SMALL.JPG___rs=w_1300,h_800.jpg" alt="Gallery 7">
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</section>
+
+	<!-- Lightbox Modal -->
+	<div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered">
+	    <div class="modal-content bg-transparent border-0">
+	      <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"></button>
+	      <img id="lightboxImage" class="modal-img rounded shadow" src="" alt="Expanded View">
+	    </div>
+	  </div>
+	</div>
+
+
+
+
+
+
+    <!-- Services -->
+    <section id="services" class="py-5 bg-body-tertiary">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row align-items-md-end justify-content-between gap-3 mb-4">
+          <div>
+            <h2 class="section-title mb-1">Our Services</h2>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="images/Services/com_isteam_stock_12792___rs=w_365,h_365,cg_true,m_.jpg" class="card-img-top" alt="Cozy Suburban Home"/>
+              <div class="card-body">
+                <h5 class="card-title">Real Estate Done Right</h5>
+                <p class="text-secondary">Nervous about your property adventure? Don’t be. Whether you're getting ready to buy or sell your residence, looking at investment properties, or just curious about the markets, our team ensures you get the best experience possible!</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="images/Services/com_isteam_stock_43920___rs=w_365,h_365,cg_true,m_.jpg" class="card-img-top" alt="Modern City Loft"/>
+              <div class="card-body">
+                <h5 class="card-title">Commercial & Residential</h5>
+                <p class="text-secondary">Large or small, condo or mansion, we can find it and get at the price that's right. Fixer-uppers? Luxury? We can help with all of it! We live, work, and play in this community. Happy to help you find where to put you hard-earned dollars.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="images/Services/com_isteam_stock_kayaJdA___rs=w_365,h_365,cg_true,m_.jpg" class="card-img-top" alt="Spacious Backyard"/>
+              <div class="card-body">
+                <h5 class="card-title">Rely on Expertise</h5>
+                <p class="text-secondary">If you have questions about affordability, credit, and loan options, trust us to connect you with the right people to get the answers you need in a timely fashion. We make sure you feel confident and educated every step of the way.!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- Contact -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <h2 class="section-title mb-3 text-center">Call or Visit</h2>
+          <div class="col-12 col-lg-6">
+            <div class="p-4 p-lg-5 rounded-4 border h-100 shadow-sm">
+              <h4 class="section-title mb-3">Send Message</h4>
+              <form class="needs-validation" novalidate>
+                <div class="row g-3">
+                  <div class="col-12">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Jane Doe" required>
+                    <div class="invalid-feedback">Please enter your name.</div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                    <div class="invalid-feedback">Please enter a valid email.</div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="phone" class="form-label">Phone (optional)</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="(000) 000‑0000">
+                  </div>
+                  <div class="col-12">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="6" placeholder="How can we help?" required></textarea>
+                    <div class="invalid-feedback">Please include a brief message.</div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary w-100" type="submit"><i class="bi bi-send me-2"></i>Send Message</button>
+                  </div>
+                </div>
+              </form>
+              <p class="text-secondary text-center">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="p-4 p-lg-5 rounded-4 border contact-card h-100 shadow-sm">
+              <h4 class="section-title mb-3">Marci Metzger - THE RIDGE REALTY GROUP</h4>
+              <ul class="list-unstyled small mb-4">
+                <li class="mb-2"><i class="bi bi-geo-alt me-2"></i>3190 HW-160, Suite F, Pahrump, Nevada 89048, United States</li>
+                <li class="mb-2"><i class="bi bi-telephone me-2"></i>(206) 919-6886</li>
+                <li class="mb-2"><i class="bi bi-clock me-2"></i>Open daily • 8:00 AM – 7:00 PM</li>
+                <li class="mb-2">
+                	<!-- facebook -->
+					<a href="https://www.facebook.com/MarciHomes/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="me-1 bi bi-facebook" viewBox="0 0 16 16" role="img" aria-label="facebook"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/></svg></a>
+
+					<!-- instagram -->
+					<a href="https://www.instagram.com/marciandlauren_nvrealtors/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="me-1 bi bi-instagram" viewBox="0 0 16 16" role="img" aria-label="instagram"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/></svg></a>
+
+					<!-- linkedin -->
+					<a href="https://www.linkedin.com/in/marci-metzger-30642496/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="me-1 bi bi-linkedin" viewBox="0 0 16 16" role="img" aria-label="linkedin"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg></a>
+
+					<!-- yelp -->
+					<a href="https://www.yelp.com/biz/xr3yQN_m2SgO0R_7S6p62w" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="me-1 bi bi-yelp" viewBox="0 0 16 16" role="img" aria-label="yelp"><path d="m4.188 10.095.736-.17a.824.824 0 0 0 .073-.02.813.813 0 0 0 .453-1.255 1.025 1.025 0 0 0-.3-.258 2.782 2.782 0 0 0-.428-.198l-.808-.295a76.035 76.035 0 0 0-1.364-.493C2.253 7.3 2 7.208 1.783 7.14c-.041-.013-.087-.025-.124-.038a2.143 2.143 0 0 0-.606-.116.723.723 0 0 0-.572.245 1.625 1.625 0 0 0-.105.132 1.555 1.555 0 0 0-.155.309c-.15.443-.225.908-.22 1.376.002.423.013.966.246 1.334a.785.785 0 0 0 .22.24c.166.114.333.129.507.141.26.019.513-.045.764-.103l2.447-.566.003.001Zm8.219-3.911a4.185 4.185 0 0 0-.8-1.14 1.602 1.602 0 0 0-.275-.21 1.591 1.591 0 0 0-.15-.073.723.723 0 0 0-.621.031c-.142.07-.294.182-.496.37-.028.028-.063.06-.094.089-.167.156-.353.35-.574.575-.34.345-.677.691-1.01 1.042l-.598.62a2.79 2.79 0 0 0-.298.365 1 1 0 0 0-.157.364.813.813 0 0 0 .007.301c0 .005.002.009.003.013a.812.812 0 0 0 .945.616.774.774 0 0 0 .074-.014l3.185-.736c.251-.058.506-.112.732-.242.151-.088.295-.175.394-.35a.787.787 0 0 0 .093-.313c.05-.434-.178-.927-.36-1.308ZM6.706 7.523c.23-.29.23-.722.25-1.075.07-1.181.143-2.362.201-3.543.022-.448.07-.89.044-1.34-.022-.372-.025-.799-.26-1.104C6.528-.077 5.644-.033 5.04.05c-.185.025-.37.06-.553.104a7.589 7.589 0 0 0-.543.149c-.58.19-1.393.537-1.53 1.204-.078.377.106.763.249 1.107.173.417.41.792.625 1.185.57 1.036 1.15 2.066 1.728 3.097.172.308.36.697.695.857.022.01.045.018.068.025.15.057.313.068.469.032l.028-.007a.809.809 0 0 0 .377-.226.732.732 0 0 0 .053-.055Zm-.276 3.161a.737.737 0 0 0-.923-.234.976.976 0 0 0-.145.09 1.909 1.909 0 0 0-.346.354c-.026.033-.05.077-.08.104l-.512.705c-.29.395-.577.791-.861 1.193-.185.26-.346.479-.472.673l-.072.11c-.152.235-.238.406-.282.559a.73.73 0 0 0-.03.314c.013.11.05.217.108.312.031.047.064.093.1.138a1.548 1.548 0 0 0 .257.237 4.482 4.482 0 0 0 2.196.76 1.593 1.593 0 0 0 .349-.027 1.57 1.57 0 0 0 .163-.048.797.797 0 0 0 .278-.178.731.731 0 0 0 .17-.266c.059-.147.098-.335.123-.613l.012-.13c.02-.231.03-.502.045-.821.025-.49.044-.98.06-1.469l.033-.87a2.09 2.09 0 0 0-.055-.623.93.93 0 0 0-.117-.27Zm5.783 1.362a2.199 2.199 0 0 0-.498-.378l-.112-.067c-.199-.12-.438-.246-.719-.398-.43-.236-.86-.466-1.295-.695l-.767-.407c-.04-.012-.08-.04-.118-.059a1.908 1.908 0 0 0-.466-.166.993.993 0 0 0-.17-.018.738.738 0 0 0-.725.616.946.946 0 0 0 .01.293c.038.204.13.406.224.583l.41.768c.228.434.459.864.696 1.294.152.28.28.52.398.719.023.037.048.077.068.112.145.239.261.39.379.497a.73.73 0 0 0 .596.201 1.55 1.55 0 0 0 .168-.029 1.584 1.584 0 0 0 .325-.129 4.06 4.06 0 0 0 .855-.64c.306-.3.577-.63.788-1.006.03-.053.055-.109.076-.165a1.58 1.58 0 0 0 .051-.161c.013-.056.022-.111.029-.168a.792.792 0 0 0-.038-.327.73.73 0 0 0-.165-.27Z"/></svg></a>
+
+					<!-- Whatsapp -->
+					<a href="https://wa.me/14259412560" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="me-1 bi bi-whatsapp" viewBox="0 0 16 16" role="img" aria-label="WhatsApp"><path d="M13.601 2.326A7.947 7.947 0 0 0 8.002 0C3.582 0 0 3.582 0 8.002c0 1.41.367 2.782 1.062 3.99L0 16l4.11-1.062a7.952 7.952 0 0 0 3.892 1.004h.004c4.42 0 8.002-3.582 8.002-8.002a7.947 7.947 0 0 0-2.407-5.614ZM8.002 14.58h-.003a6.59 6.59 0 0 1-3.36-.921l-.24-.142-2.437.63.651-2.374-.157-.244a6.592 6.592 0 0 1-.999-3.517 6.597 6.597 0 0 1 6.6-6.6c1.764 0 3.42.687 4.665 1.933a6.568 6.568 0 0 1 1.935 4.666 6.598 6.598 0 0 1-6.6 6.6Zm3.676-4.934c-.201-.1-1.187-.586-1.37-.652-.183-.068-.317-.1-.452.1-.134.201-.518.652-.635.785-.117.134-.234.15-.435.05-.201-.1-.85-.313-1.62-1-.6-.534-1-1.192-1.118-1.393-.117-.201-.013-.31.088-.41.09-.09.201-.234.302-.351.1-.117.134-.201.201-.335.067-.134.034-.25-.017-.351-.05-.1-.452-1.09-.619-1.49-.162-.39-.326-.335-.452-.341-.117-.006-.25-.006-.384-.006a.74.74 0 0 0-.535.25c-.183.201-.702.686-.702 1.67s.719 1.938.819 2.07c.1.134 1.413 2.155 3.43 3.021.48.207.853.331 1.144.423.48.153.918.132 1.263.08.385-.057 1.187-.485 1.353-.955.167-.47.167-.873.117-.955-.05-.083-.183-.133-.384-.233Z"/></svg></a>
+                </li>
+              </ul>
+              <p class="text-secondary">Appointments outside office hours available upon request. Just call!</p>
+              <div class="ratio ratio-16x9 rounded-4 overflow-hidden border shadow-sm">
+                <iframe title="Map placeholder" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1610.1645792309448!2d-115.95650103321213!3d36.18287588793493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c639760f7b12f3%3A0xa05207dd285dc73c!2sTHE%20RIDGE%20REALTY%20GROUP!5e0!3m2!1sen!2sph!4v1755185104633!5m2!1sen!2sph" loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Find Your Dream Home -->
+    <section id="partnership-logo" class="py-5 bg-partner">
+	  <div class="container">
+	  	<div class="row justify-content-center">
+	      <div class="col-12 col-lg-6">
+			  <h2 class="section-title mb-4 par-text">Proudly Affiliated</h2>
+			  <p class="lead text-center">We are honored to partner with trusted organizations and uphold the highest standards in real estate and community service.</p>
+	      </div>
+  		</div>
+  	  </div>
+	  <div class="container">
+	  	<div class="row justify-content-center">
+	      <div class="col-12 col-lg-8">
+			  <div class="partner-section">
+			    <img class="partner-logo" src="images/Partnership/cr=w_100,h_100.png" alt="">
+			    <img class="partner-logo" src="images/Partnership/rs=w_100,h_100,cg_true.png" alt="">
+			    <img class="partner-logo" src="images/Partnership/rs=w_112,h_100,cg_true.png" alt="">
+			    <img class="partner-logo" src="images/Partnership/PVCC-Logo-Transp copy.png" alt="">
+			  </div>
+	      </div>
+  		</div>
+  	  </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="row g-3">
+        	<div class="col-12 mb-4 text-center">
+        		<a href="#home"><img src="images/Marci Metzger white.png" class="footer-logo" alt=""></a>
+        	</div>
+        </div>
+        <div class="row align-items-center g-3 text-center">
+          <div class="col-12 col-sm-6 col-lg-4">
+			<h5>Contact Us</h5>
+			<p><a href="tel:2069196886"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16" role="img" aria-label="phone"><path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/></svg> (206) 919-6886</a></p>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+			<h5>Business Hours</h5>
+			<p>Open daily • 8:00 AM – 7:00 PM</p>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+			<div>
+	        	<!-- facebook -->
+				<a href="https://www.facebook.com/MarciHomes/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="me-1 bi bi-facebook" viewBox="0 0 16 16" role="img" aria-label="facebook"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/></svg></a>
+
+				<!-- instagram -->
+				<a href="https://www.instagram.com/marciandlauren_nvrealtors/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="me-1 bi bi-instagram" viewBox="0 0 16 16" role="img" aria-label="instagram"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/></svg></a>
+
+				<!-- linkedin -->
+				<a href="https://www.linkedin.com/in/marci-metzger-30642496/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="me-1 bi bi-linkedin" viewBox="0 0 16 16" role="img" aria-label="linkedin"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg></a>
+
+				<!-- yelp -->
+				<a href="https://www.yelp.com/biz/xr3yQN_m2SgO0R_7S6p62w" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="me-1 bi bi-yelp" viewBox="0 0 16 16" role="img" aria-label="yelp"><path d="m4.188 10.095.736-.17a.824.824 0 0 0 .073-.02.813.813 0 0 0 .453-1.255 1.025 1.025 0 0 0-.3-.258 2.782 2.782 0 0 0-.428-.198l-.808-.295a76.035 76.035 0 0 0-1.364-.493C2.253 7.3 2 7.208 1.783 7.14c-.041-.013-.087-.025-.124-.038a2.143 2.143 0 0 0-.606-.116.723.723 0 0 0-.572.245 1.625 1.625 0 0 0-.105.132 1.555 1.555 0 0 0-.155.309c-.15.443-.225.908-.22 1.376.002.423.013.966.246 1.334a.785.785 0 0 0 .22.24c.166.114.333.129.507.141.26.019.513-.045.764-.103l2.447-.566.003.001Zm8.219-3.911a4.185 4.185 0 0 0-.8-1.14 1.602 1.602 0 0 0-.275-.21 1.591 1.591 0 0 0-.15-.073.723.723 0 0 0-.621.031c-.142.07-.294.182-.496.37-.028.028-.063.06-.094.089-.167.156-.353.35-.574.575-.34.345-.677.691-1.01 1.042l-.598.62a2.79 2.79 0 0 0-.298.365 1 1 0 0 0-.157.364.813.813 0 0 0 .007.301c0 .005.002.009.003.013a.812.812 0 0 0 .945.616.774.774 0 0 0 .074-.014l3.185-.736c.251-.058.506-.112.732-.242.151-.088.295-.175.394-.35a.787.787 0 0 0 .093-.313c.05-.434-.178-.927-.36-1.308ZM6.706 7.523c.23-.29.23-.722.25-1.075.07-1.181.143-2.362.201-3.543.022-.448.07-.89.044-1.34-.022-.372-.025-.799-.26-1.104C6.528-.077 5.644-.033 5.04.05c-.185.025-.37.06-.553.104a7.589 7.589 0 0 0-.543.149c-.58.19-1.393.537-1.53 1.204-.078.377.106.763.249 1.107.173.417.41.792.625 1.185.57 1.036 1.15 2.066 1.728 3.097.172.308.36.697.695.857.022.01.045.018.068.025.15.057.313.068.469.032l.028-.007a.809.809 0 0 0 .377-.226.732.732 0 0 0 .053-.055Zm-.276 3.161a.737.737 0 0 0-.923-.234.976.976 0 0 0-.145.09 1.909 1.909 0 0 0-.346.354c-.026.033-.05.077-.08.104l-.512.705c-.29.395-.577.791-.861 1.193-.185.26-.346.479-.472.673l-.072.11c-.152.235-.238.406-.282.559a.73.73 0 0 0-.03.314c.013.11.05.217.108.312.031.047.064.093.1.138a1.548 1.548 0 0 0 .257.237 4.482 4.482 0 0 0 2.196.76 1.593 1.593 0 0 0 .349-.027 1.57 1.57 0 0 0 .163-.048.797.797 0 0 0 .278-.178.731.731 0 0 0 .17-.266c.059-.147.098-.335.123-.613l.012-.13c.02-.231.03-.502.045-.821.025-.49.044-.98.06-1.469l.033-.87a2.09 2.09 0 0 0-.055-.623.93.93 0 0 0-.117-.27Zm5.783 1.362a2.199 2.199 0 0 0-.498-.378l-.112-.067c-.199-.12-.438-.246-.719-.398-.43-.236-.86-.466-1.295-.695l-.767-.407c-.04-.012-.08-.04-.118-.059a1.908 1.908 0 0 0-.466-.166.993.993 0 0 0-.17-.018.738.738 0 0 0-.725.616.946.946 0 0 0 .01.293c.038.204.13.406.224.583l.41.768c.228.434.459.864.696 1.294.152.28.28.52.398.719.023.037.048.077.068.112.145.239.261.39.379.497a.73.73 0 0 0 .596.201 1.55 1.55 0 0 0 .168-.029 1.584 1.584 0 0 0 .325-.129 4.06 4.06 0 0 0 .855-.64c.306-.3.577-.63.788-1.006.03-.053.055-.109.076-.165a1.58 1.58 0 0 0 .051-.161c.013-.056.022-.111.029-.168a.792.792 0 0 0-.038-.327.73.73 0 0 0-.165-.27Z"/></svg></a>
+
+				<!-- Whatsapp -->
+				<a href="https://wa.me/14259412560" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="me-1 bi bi-whatsapp" viewBox="0 0 16 16" role="img" aria-label="WhatsApp"><path d="M13.601 2.326A7.947 7.947 0 0 0 8.002 0C3.582 0 0 3.582 0 8.002c0 1.41.367 2.782 1.062 3.99L0 16l4.11-1.062a7.952 7.952 0 0 0 3.892 1.004h.004c4.42 0 8.002-3.582 8.002-8.002a7.947 7.947 0 0 0-2.407-5.614ZM8.002 14.58h-.003a6.59 6.59 0 0 1-3.36-.921l-.24-.142-2.437.63.651-2.374-.157-.244a6.592 6.592 0 0 1-.999-3.517 6.597 6.597 0 0 1 6.6-6.6c1.764 0 3.42.687 4.665 1.933a6.568 6.568 0 0 1 1.935 4.666 6.598 6.598 0 0 1-6.6 6.6Zm3.676-4.934c-.201-.1-1.187-.586-1.37-.652-.183-.068-.317-.1-.452.1-.134.201-.518.652-.635.785-.117.134-.234.15-.435.05-.201-.1-.85-.313-1.62-1-.6-.534-1-1.192-1.118-1.393-.117-.201-.013-.31.088-.41.09-.09.201-.234.302-.351.1-.117.134-.201.201-.335.067-.134.034-.25-.017-.351-.05-.1-.452-1.09-.619-1.49-.162-.39-.326-.335-.452-.341-.117-.006-.25-.006-.384-.006a.74.74 0 0 0-.535.25c-.183.201-.702.686-.702 1.67s.719 1.938.819 2.07c.1.134 1.413 2.155 3.43 3.021.48.207.853.331 1.144.423.48.153.918.132 1.263.08.385-.057 1.187-.485 1.353-.955.167-.47.167-.873.117-.955-.05-.083-.183-.133-.384-.233Z"/></svg></a>
+			</div>
+			<div class="mt-2">
+				<a href="/privacy-policy/" class="btn btn-primary">Privacy Policy</a>
+			</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copy mt-5">
+	    <div class="container">
+	        <div class="row g-3">
+	        	<div class="col-12 mb-4 text-center">
+	        		<small>Copyright &copy; <span id="year"></span> Marci METZGER Homes - All Rights Reserved</small>
+	        	</div>
+	        </div>
+	    </div>
+      </div>
+                    
+    </footer>
+
+    <!-- Bootstrap Bundle (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Simple client-side validation helper -->
+    <script>
+      // Bootstrap validation (from docs)
+      (() => {
+        'use strict';
+        const forms = document.querySelectorAll('.needs-validation');
+        Array.from(forms).forEach(form => {
+          form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      })();
+      // Year in footer
+      document.getElementById('yr').textContent = new Date().getFullYear();
+    </script>
+    <!-- Gallery Lightbox -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+	  const lightboxModal = document.getElementById('lightboxModal');
+	  const lightboxImage = document.getElementById('lightboxImage');
+
+	  lightboxModal.addEventListener('show.bs.modal', function (event) {
+	    const trigger = event.relatedTarget;
+	    const imgSrc = trigger.getAttribute('data-img');
+	    lightboxImage.src = imgSrc;
+	  });
+	</script>
+
+
+  </body>
+</html>
